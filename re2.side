@@ -1,0 +1,68 @@
+{
+  "id": "b8c3d760-f474-4287-8045-e7d6f02a6ff4",
+  "version": "2.0",
+  "name": "TC-003",
+  "url": "https://demo.opencart.com/index.php?route=product/product&path=57&product_id=49",
+  "tests": [{
+    "id": "ec7baf66-4402-45e6-85bf-2a7172b526c5",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "eae9f3bd-0682-4992-91a4-ceee795aa654",
+    "name": "task-04",
+    "commands": [{
+      "id": "c2de5ce6-d7de-494f-a4e1-a264e42e81db",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/index.php?route=product/product&path=57&product_id=49",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0074a9e-05e0-4509-be54-e29fa94cb2c8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78dd6068-afac-4ff3-b767-b170695a8eec",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Phones & PDAs",
+      "targets": [
+        ["linkText=Phones & PDAs", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Phones & PDAs')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=24')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Phones & PDAs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f61fc35-eef5-41a8-b2af-1a8df24c473f",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.image",
+      "targets": [],
+      "value": "HTC Touch HD"
+    }, {
+      "id": "4c571370-3a0b-473f-a941-2bdc7f4e97be",
+      "comment": "",
+      "command": "echo",
+      "target": "${HTC Touch HD}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b182a240-0217-4106-b471-826f3c3e51b0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ec7baf66-4402-45e6-85bf-2a7172b526c5"]
+  }],
+  "urls": ["https://demo.opencart.com/", "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb", "https://demo.opencart.com/index.php?route=product/product&path=57&product_id=49"],
+  "plugins": []
+}
